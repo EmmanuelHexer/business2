@@ -1,4 +1,5 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/plate.png";
+import { FaSearch } from "react-icons/fa";
 
 const Nav = () => {
   return (
@@ -21,7 +22,9 @@ const Nav = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <search>Search</search>
+        <div>
+          <FaSearch className="search" />
+        </div>
       </nav>
     </div>
   );

@@ -1,4 +1,4 @@
-import plate from "../assets/plate.webp";
+import plate from "../assets/plate.png";
 
 const Hero = () => {
   return (
