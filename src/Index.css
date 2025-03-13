@@ -82,6 +82,11 @@ nav img {
 .hero-first-half button {
   font-size: 16px;
   color: var(--main-theme-color);
+  background-color: transparent;
+  border: none;
+  border: 3px solid var(--main-theme-color);
+  padding: 8px 16px;
+  margin-top: 30px;
 }
 
 .hero-second-half {
