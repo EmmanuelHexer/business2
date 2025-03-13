@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap");
+
+:root {
+  --main-theme-color: #ff8c00;
+}
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  background: linear-gradient(to right, black 50%, orange 50%);
-  padding: 10px;
+  background: linear-gradient(to right, #000000, #331a00, #ff8c00);
+
+  padding: 20px;
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
@@ -31,7 +37,7 @@ nav figure {
 }
 
 nav img {
-  width: 10rem;
+  width: 7rem;
 }
 
 .nav ul {
@@ -48,4 +54,43 @@ nav img {
   text-decoration: none;
   color: white;
   font-size: 1.8rem;
+}
+
+.hero {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.hero-first-half {
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero-first-half h1 {
+  font-size: 62px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-first-half p {
+  font-size: 16px;
+}
+
+.hero-first-half button {
+  font-size: 16px;
+  color: var(--main-theme-color);
+}
+
+.hero-second-half {
+  width: 50%;
+}
+
+.hero-second-half .plate {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 50%;
+  box-shadow: 0px 16px 32px 10px rgba(0, 0, 0, 0.8);
 }
