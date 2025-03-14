@@ -44,8 +44,15 @@ const Nav = () => {
             );
           })}
         </ul>
-        <div>
-          <FaSearch className="search" />
+        <div className="search-box">
+          <button className="btn-search">
+            <FaSearch className="search fas fa-search" />
+          </button>
+          <input
+            className="input-search"
+            type="text"
+            placeholder="Search for foods"
+          />
         </div>
       </nav>
     </div>

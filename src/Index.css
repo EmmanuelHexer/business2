@@ -76,14 +76,83 @@ nav figure {
   background-color: var(--main-theme-color);
   position: absolute;
   bottom: -5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.link-underline:hover::before {
+  background-color: white;
+  width: 0%;
 }
 
 .nav ul li a:hover {
   color: var(--main-theme-color);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.search {
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  /* padding: 10px; */
   font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #22a6b3;
+  color: #fff;
+  opacity: 0;
+}
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: -30px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  opacity: 1;
+}
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  opacity: 1;
+}
+
+input {
+  width: 100%;
 }
 
 /* HERO SECTION */
@@ -113,6 +182,16 @@ nav figure {
 
 .hero-first-half h1 span:nth-child(2) {
   color: var(--main-theme-color);
+  position: relative;
+}
+
+.hero-first-half h1 span:nth-child(2)::before {
+  content: "";
+  width: 20%;
+  height: 5px;
+  background-color: var(--main-theme-color);
+  position: absolute;
+  bottom: -15px;
 }
 
 .hero-first-half p {
@@ -127,6 +206,12 @@ nav figure {
   border: 3px solid var(--main-theme-color);
   padding: 8px 16px;
   margin-top: 30px;
+}
+
+.hover-white:hover {
+  color: white;
+  border-color: white;
+  transition: all 0.5s ease-in-out;
 }
 
 .hero-second-half {

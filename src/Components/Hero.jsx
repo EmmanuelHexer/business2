@@ -10,7 +10,7 @@ const Hero = () => {
             <span>best food!</span>
           </h1>
           <p>let's start do your order now!</p>
-          <button>Check out</button>
+          <button className="hover-white">Check out</button>
         </div>
         <div className="hero-second-half">
           <img className="plate" src={plate} alt="plate" />
