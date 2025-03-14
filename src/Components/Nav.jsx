@@ -25,11 +25,16 @@ const Nav = () => {
         </figure>
         <ul>
           {links.map(({ name, url }, index) => {
-            console.log(index);
             return (
               <li key={index}>
                 <a
-                  className={selectedLink === index ? underline : ""}
+                  className={
+                    selectedLink === index
+                      ? underline
+                      : index === 0 && selectedLink === null
+                      ? "link-underline"
+                      : ""
+                  }
                   to={url}
                   onClick={() => setActive(index)}
                 >
