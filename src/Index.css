@@ -83,6 +83,9 @@ nav figure {
   background-color: white;
   width: 0%;
 }
+.link-underline:active::before {
+  width: 100%;
+}
 
 .nav ul li a:hover {
   color: var(--main-theme-color);
@@ -163,6 +166,7 @@ input {
   justify-content: space-between;
   align-items: center;
   margin-top: 8rem;
+  position: relative;
 }
 
 .hero-first-half {
@@ -214,8 +218,47 @@ input {
   transition: all 0.5s ease-in-out;
 }
 
+.checkout-affordable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .hero-second-half {
   width: 50%;
+  display: flex;
+  position: relative;
+}
+
+.great-prices {
+  font-size: 20px;
+  border: 3px solid var(--main-theme-color);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 62px;
+  height: 62px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  bottom: 10%;
+  left: -100px;
+}
+
+.great-prices:before {
+  content: " ";
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 5px solid var(--main-theme-color);
+  border-radius: 50%;
 }
 
 .hero-second-half .plate {
@@ -223,4 +266,39 @@ input {
   max-width: 600px;
   border-radius: 50%;
   box-shadow: 0 4px 16px;
+}
+
+.social-links {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.social-links li {
+  background-color: #110900;
+  padding: 10px 12px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+.social-links li:first-child {
+  border-top-left-radius: 20px;
+}
+
+.social-links li:last-child {
+  border-bottom-left-radius: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.social-links li:hover {
+  background-color: var(--main-theme-color);
 }
