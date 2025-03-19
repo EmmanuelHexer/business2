@@ -26,7 +26,7 @@ const Nav = () => {
         <ul>
           {links.map(({ name, url }, index) => {
             return (
-              <li key={index}>
+              <li key={index} className="none">
                 <a
                   className={
                     selectedLink === index

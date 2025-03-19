@@ -1,8 +1,15 @@
 import plate from "../assets/plate.png";
 import SocialLinks from "../Utility/SocialLinks";
+import { useState } from "react";
+import { Close, Open } from "./MobileMenuToggle";
+import MobileMenu from "./MobileMenu";
 
 const Hero = () => {
+  const [isOpen, setIsOPen] = useState(false);
+  const openMobileMenu = () => setIsOPen(!isOpen);
+
   const socials = SocialLinks();
+
   return (
     <div className="">
       <section className="hero">
@@ -34,6 +41,10 @@ const Hero = () => {
           </li>
         ))}
       </ul>
+      <button onClick={openMobileMenu} className="ham-menu">
+        {isOpen ? <Close /> : <Open />}
+        {isOpen && <MobileMenu />}
+      </button>
     </div>
   );
 };

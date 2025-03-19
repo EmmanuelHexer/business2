@@ -302,3 +302,7 @@ input {
 .social-links li:hover {
   background-color: var(--main-theme-color);
 }
+
+.ham-menu {
+  display: none;
+}
