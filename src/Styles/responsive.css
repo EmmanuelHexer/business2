@@ -178,8 +178,7 @@
 
 @media (max-width: 320px) {
   .hero {
-    flex-direction: row;
-    align-items: start;
+    margin: 0;
   }
   .hero-first-half h1 {
     font-size: 28px;
