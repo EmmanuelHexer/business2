@@ -166,10 +166,10 @@ input {
 .hero {
   font-family: "Montserrat", sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
-  margin-top: 8rem;
   position: relative;
+  height: calc(100vh - 107px);
 }
 
 .hero-first-half {
@@ -317,6 +317,14 @@ input {
   margin-top: 80px;
   font-family: "poppins";
   padding: 20px;
+  border-radius: 5px;
+}
+
+.products h1 {
+  text-align: center;
+  color: #1d0f00;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .foods {
@@ -324,15 +332,16 @@ input {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .food {
-  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.008);
   width: 100%;
   max-width: 300px;
   border-radius: 20px;
   padding: 10px;
+  background-color: rgb(255, 255, 255);
 }
 .food-img {
   width: 100%;
