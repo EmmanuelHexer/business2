@@ -267,6 +267,7 @@ input {
   max-width: 550px;
   border-radius: 50%;
   box-shadow: 0 4px 16px;
+  animation: slideInRight 2s ease-out forwards;
 }
 
 .social-links {
@@ -306,6 +307,31 @@ input {
 
 .ham-menu {
   display: none;
+}
+.slide-In-left {
+  animation: slideInLeft 2s ease-out forwards;
+}
+/* ANIMATION FOR TEXTS */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* FOOD PRODUCTS SECTION  */
@@ -412,3 +438,168 @@ input {
   max-width: 100%;
   width: calc(100% + 40px);
 } */
+/* SERVICES SECTION START */
+.services-container {
+  height: 100vh;
+}
+.services-heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+.container {
+  height: 90vh;
+}
+.first-image-side {
+  height: 20%;
+  background-image: url("https://images.unsplash.com/photo-1713972327552-b453b9775994?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.586);
+  background-blend-mode: multiply;
+}
+
+.first-image-side p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  padding-top: 50px;
+}
+.service-img {
+  width: 395px;
+  height: 300px;
+  margin-top: 20px;
+}
+.service {
+  position: relative;
+  z-index: -1;
+}
+
+.service p {
+  color: gray;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  background-color: aliceblue;
+  padding: 15px;
+}
+.service h3 {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+.services-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+/* SERVICES SECTION END */
+
+/* CONTACT US SECTION START */
+
+.contact-container {
+  height: 100vh;
+}
+.contact-heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+.form-article {
+  background-color: rgba(245, 245, 245, 0.431);
+  width: 100%;
+}
+#form {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  z-index: -1;
+  position: relative;
+}
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+}
+.iframe-wrapper::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.348);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#form input,
+textarea {
+  width: 40%;
+  padding: 15px 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  color: gray;
+}
+textarea {
+  resize: none;
+}
+#form input::placeholder,
+textarea::placeholder {
+  color: #cccccc;
+  font-style: italic;
+}
+.submit {
+  padding: 10px 15px;
+  background-color: #ff8c00;
+  border: none;
+  color: aliceblue;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 10px 0 15px 0;
+}
+
+.submit:hover {
+  background-color: #e6cc3e;
+}
+
+.contact-address {
+  font-size: 1.2rem;
+  color: rgb(253, 249, 249);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.431);
+}
+
+.contact-address h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-decoration: underline;
+  color: #110900c4;
+}
+.contact-address p {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
