@@ -371,20 +371,19 @@ input {
   color: #333333;
 }
 .food-btn {
-  border: 2px solid #1d0f00;
+  border: 1px solid var(--main-theme-color);
   background-color: transparent;
   padding: 10px 16px;
   border-radius: 20px;
   margin-top: 20px;
-  color: #110900;
+  color: var(--main-theme-color);
   cursor: pointer;
   font-weight: bold;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   transition: background 0.3s ease-in-out;
 }
 .food-btn:hover {
-  background-color: #d47000;
-  border-color: #d47000;
+  background-color: var(--main-theme-color);
   color: white;
 }
 .load-food {
