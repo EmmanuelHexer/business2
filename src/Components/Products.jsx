@@ -19,8 +19,8 @@ const Products = () => {
     <Element className="products no-padding-wrapper" name="products1">
       <h1>Food products</h1>
       <div className="foods">
-        {data.map(({ imageUrl, name, description, category }) => (
-          <div className="food">
+        {data.map(({ imageUrl, name, description, category }, index) => (
+          <div className="food" key={index}>
             <img className="food-img" src={imageUrl} alt="" />
             <div className="food-category">{category}</div>
             <div className="food-name">{name}</div>

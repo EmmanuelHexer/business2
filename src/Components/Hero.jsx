@@ -33,8 +33,8 @@ const Hero = () => {
         </div>
       </section>
       <ul className="social-links">
-        {socials.map(({ img, url }) => (
-          <li>
+        {socials.map(({ img, url }, index) => (
+          <li key={index}>
             <a href={url} target="_blank">
               {img}
             </a>
@@ -43,7 +43,7 @@ const Hero = () => {
       </ul>
       <button onClick={openMobileMenu} className="ham-menu">
         {isOpen ? <Close /> : <Open />}
-        {isOpen && <MobileMenu />}
+        {isOpen && <MobileMenu isOPen={isOpen} setIsOpen={setIsOPen} />}
       </button>
     </div>
   );
