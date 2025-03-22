@@ -340,7 +340,7 @@ input {
   border-radius: 10px;
   padding: 20px;
   background-color: rgb(255, 255, 255);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .food:hover .food-img {
   transform: scale(1.03);
@@ -352,6 +352,7 @@ input {
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease-in-out;
 }
 .food-name {
   font-size: 20px;
