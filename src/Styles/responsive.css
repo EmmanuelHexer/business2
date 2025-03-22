@@ -11,6 +11,10 @@
   .hero-first-half h1 {
     font-size: 62px;
   }
+
+  .load-food {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -36,6 +40,15 @@
 @media (max-width: 900px) {
   .foods {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .foods {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .food-btn {
+    width: 100%;
   }
 }
 
