@@ -1,4 +1,5 @@
 import NavLinks from "../Utility/NavLinks";
+import { Link } from "react-scroll";
 
 const MobileMenu = () => {
   const links = NavLinks();
@@ -8,7 +9,7 @@ const MobileMenu = () => {
         <ul className="mobile-menu">
           {links.map(({ name, url }, index) => (
             <li key={index}>
-              <a href={url}>{name}</a>
+              <Link to={url}>{name}</Link>
             </li>
           ))}
         </ul>

@@ -313,16 +313,14 @@ input {
 /* FOOD PRODUCTS SECTION  */
 
 .products {
-  background-color: #f9f6ee;
-  margin-top: 80px;
   font-family: "poppins";
-  padding: 20px;
+  padding: 30px;
   border-radius: 5px;
 }
 
 .products h1 {
   text-align: center;
-  color: #1d0f00;
+  color: #ffffff;
   font-size: 3rem;
   text-transform: uppercase;
 }
@@ -332,16 +330,20 @@ input {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .food {
-  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.008);
+  box-shadow: 2px 4px 8px rgba(212, 184, 168, 0.5);
   width: 100%;
   max-width: 300px;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 20px;
   background-color: rgb(255, 255, 255);
+  transition: transform 0.2s ease-in-out;
+}
+.food:hover {
+  transform: scale(1.03);
 }
 .food-img {
   width: 100%;
@@ -352,7 +354,7 @@ input {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 .food-name {
-  font-size: 16px;
+  font-size: 20px;
   color: #3d2c1e;
   font-weight: bold;
 }
@@ -364,15 +366,22 @@ input {
 .food-description {
   font-size: 12px;
   margin-top: 10px;
+  color: #333333;
 }
 .food-btn {
   border: none;
-  background-color: var(--main-theme-color);
+  background-color: #ff8c00;
   padding: 10px 16px;
   border-radius: 20px;
   margin-top: 20px;
-  color: #1d0f00;
+  color: #ffffff;
+  cursor: pointer;
   font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease-in-out;
+}
+.food-btn:hover {
+  background-color: #d47000;
 }
 /* .no-padding-wrapper {
   margin-left: -20px;

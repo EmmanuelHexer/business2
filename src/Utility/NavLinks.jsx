@@ -6,7 +6,7 @@ const NavLinks = () => {
     },
     {
       name: "Products",
-      url: "#",
+      url: "products1",
     },
     {
       name: "About",

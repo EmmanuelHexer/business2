@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 import NavLinks from "../Utility/NavLinks";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [underline, setUnderline] = useState("link-underline");
@@ -27,7 +27,7 @@ const Nav = () => {
           {links.map(({ name, url }, index) => {
             return (
               <li key={index} className="none">
-                <a
+                <Link
                   className={
                     selectedLink === index
                       ? underline
@@ -36,10 +36,12 @@ const Nav = () => {
                       : ""
                   }
                   to={url}
+                  smooth={true}
+                  duration={500}
                   onClick={() => setActive(index)}
                 >
                   {name}
-                </a>
+                </Link>
               </li>
             );
           })}

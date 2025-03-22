@@ -4,6 +4,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .foods {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-first-half h1 {
     font-size: 48px;
@@ -21,6 +27,12 @@
 
   .foods {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .foods {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

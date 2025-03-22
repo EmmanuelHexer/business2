@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Element } from "react-scroll";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -6,7 +7,7 @@ const Products = () => {
   useEffect(() => {
     async function getData() {
       const response = await fetch(
-        "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/dafa4802f011cb704d99732a162de809fbdab4b5/products.json",
+        "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/3e801a6285b80289958c5aa98722256b504a250c/products.json",
       );
       const data = await response.json();
       if (data && data.length) setData(data);
@@ -15,7 +16,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="products no-padding-wrapper">
+    <Element className="products no-padding-wrapper" name="products1">
       <h1>Food products</h1>
       <div className="foods">
         {data.map(({ imageUrl, name, description, category }) => (
@@ -28,7 +29,7 @@ const Products = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Element>
   );
 };
 
