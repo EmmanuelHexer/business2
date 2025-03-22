@@ -388,19 +388,23 @@ input {
 .load-food {
   max-width: 50%;
   margin: 40px 0;
-  border: none;
+  border: 2px solid var(--main-theme-color);
   padding: 15px 30px;
-  background-color: var(--main-theme-color);
+  background-color: transparent;
   border-radius: 5px;
   color: #ffffff;
   font-weight: bolder;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in-out;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .load-food:hover {
   background-color: #9d560b;
   transform: scale(1.04);
+}
+.arrow-down {
+  margin-left: 5px;
 }
 /* .no-padding-wrapper {
   margin-left: -20px;

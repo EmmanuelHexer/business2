@@ -38,7 +38,7 @@ const Products = () => {
       </div>
       {visibleCount < data.length && (
         <button onClick={() => loadMore()} className="load-food">
-          View More Food
+          View More <span className="arrow-down">↓</span>
         </button>
       )}
     </Element>
