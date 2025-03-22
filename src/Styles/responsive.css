@@ -96,7 +96,7 @@
   }
 
   .mobile-menu {
-    background: linear-gradient(135deg, #f3a683, #786fa6);
+    background: linear-gradient(to right, #111111, #eca54e);
     width: calc(100% - 100px) !important;
     height: calc(100vh - 150px);
     padding: 20px;
