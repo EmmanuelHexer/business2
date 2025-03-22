@@ -5,11 +5,15 @@ const NavLinks = () => {
       url: "#",
     },
     {
+      name: "Categories",
+      url: "products1",
+    },
+    {
       name: "Products",
       url: "products1",
     },
     {
-      name: "About",
+      name: "Services",
       url: "#",
     },
     {
