@@ -342,7 +342,7 @@ input {
   background-color: rgb(255, 255, 255);
   transition: transform 0.2s ease-in-out;
 }
-.food:hover {
+.food:hover .food-img {
   transform: scale(1.03);
 }
 .food-img {
