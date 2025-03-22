@@ -8,6 +8,9 @@
   .foods {
     grid-template-columns: repeat(3, 1fr);
   }
+  .hero-first-half h1 {
+    font-size: 62px;
+  }
 }
 
 @media (max-width: 1024px) {

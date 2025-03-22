@@ -57,7 +57,7 @@ nav figure {
 
 .nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 50%;
 }
 
@@ -178,7 +178,7 @@ input {
 }
 
 .hero-first-half h1 {
-  font-size: 62px;
+  font-size: 82px;
   display: flex;
   flex-direction: column;
 }
@@ -202,7 +202,7 @@ input {
 }
 
 .hero-first-half p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .hero-first-half button {
@@ -266,7 +266,7 @@ input {
 
 .hero-second-half .plate {
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   border-radius: 50%;
   box-shadow: 0 4px 16px;
 }
