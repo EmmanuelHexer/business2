@@ -12,13 +12,6 @@ const Services = ({ services }) => {
       <section className="services-container" name="servcie" ref={services}>
         <h1 className="services-heading">Services</h1>
         <article className="container">
-          <div className="first-image-side">
-            <p>
-              Over the course of our Cuisine's existence,
-              <br /> we've been trying to offer our customers as many additional
-              services as possible.
-            </p>
-          </div>
           <div className="services-content">
             <div className="service">
               <img
@@ -27,7 +20,7 @@ const Services = ({ services }) => {
                 src="https://african.land/oc-content/plugins/blog/img/blog/1332.jpg"
               />
               <h3>
-                <TbHexagonNumber1 color="pink" size={28} />
+                <TbHexagonNumber1 color="pink" size={58} />
                 Catering
               </h3>
 
@@ -46,7 +39,7 @@ const Services = ({ services }) => {
                 src="https://chefamenta.com/wp-content/uploads/2024/10/food-orders-295x300.jpg"
               />
               <h3>
-                <TbHexagonNumber2 color="blue" size={28} />
+                <TbHexagonNumber2 color="blue" size={58} />
                 Personal Orders
               </h3>
               <p>
@@ -63,7 +56,7 @@ const Services = ({ services }) => {
                 src="https://aldhafrauae.ae/wp-content/uploads/2021/11/event-and-catering-agency-organization-modern-wedd-L56YUGX-min_480x480.webp"
               />
               <h3>
-                <TbHexagonNumber3 color="purple" size={28} />
+                <TbHexagonNumber3 color="purple" size={58} />
                 Event (Indoor & Outdoor) Management
               </h3>
               <p>
