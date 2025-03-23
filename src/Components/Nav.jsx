@@ -4,9 +4,21 @@ import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-const Nav = () => {
+const Nav = ({ home, products, services, contact }) => {
   const [underline, setUnderline] = useState("link-underline");
   const [selectedLink, setSelectedLink] = useState(null);
+
+  const sections = [home, products, services, contact];
+
+  const scrollToSection = (index) => {
+    let section = sections[index];
+    if (section) {
+      window.scrollTo({
+        top: section.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const setActive = (index) => {
     if (underline) {
@@ -18,7 +30,7 @@ const Nav = () => {
   const links = NavLinks();
 
   return (
-    <div>
+    <div ref={home}>
       <nav className="nav">
         <figure>
           <img className="logo" src={logo} alt="logo" />
@@ -38,7 +50,10 @@ const Nav = () => {
                   to={url}
                   smooth={true}
                   duration={500}
-                  onClick={() => setActive(index)}
+                  onClick={() => {
+                    setActive(index);
+                    scrollToSection(index);
+                  }}
                 >
                   {name}
                 </Link>

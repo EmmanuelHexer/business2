@@ -1,9 +1,9 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = ({ contact }) => {
   return (
     <>
-      <section className="contact-container" name="contact">
+      <section className="contact-container" name="contact" ref={contact}>
         <div className="grid-wrapper">
           <form action="" id="form">
             <h1 className="contact-heading">Contact Us</h1>

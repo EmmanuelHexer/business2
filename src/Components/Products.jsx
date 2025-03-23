@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { Element } from "react-scroll";
 
-const Products = () => {
+const Products = ({ products }) => {
   const [data, setData] = useState([]);
   const [visibleCount, setVisibleCount] = useState(8);
 
@@ -21,7 +20,7 @@ const Products = () => {
   }, []);
 
   return (
-    <Element className="products no-padding-wrapper" name="products1">
+    <div className="products no-padding-wrapper" ref={products}>
       <h1>Food products</h1>
       <div className="foods">
         {data
@@ -41,7 +40,7 @@ const Products = () => {
           View More <span className="arrow-down">↓</span>
         </button>
       )}
-    </Element>
+    </div>
   );
 };
 
