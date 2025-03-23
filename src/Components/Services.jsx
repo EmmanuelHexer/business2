@@ -6,10 +6,10 @@ import {
 } from "react-icons/tb";
 import { GrAnnounce } from "react-icons/gr";
 
-const Services = () => {
+const Services = ({ services }) => {
   return (
     <>
-      <section className="services-container" name="servcie">
+      <section className="services-container" name="servcie" ref={services}>
         <h1 className="services-heading">Services</h1>
         <article className="container">
           <div className="first-image-side">
