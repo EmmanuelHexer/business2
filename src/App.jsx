@@ -3,6 +3,8 @@ import Hero from "./Components/Hero";
 import Products from "./Components/Products";
 import Services from "./Components/services";
 import Contact from "./Components/Contact";
+import Footer from "./Components/footer";
+import { useRef } from "react";
 const App = () => {
   const home = useRef(null);
   const products = useRef(null);
@@ -17,9 +19,10 @@ const App = () => {
         contact={contact}
       />
       <Hero />
-      <Products />
-      <Services />
-      <Contact />
+      <Products products={products} />
+      <Services services={services} />
+      <Contact contact={contact} />
+      <Footer />
     </div>
   );
 };
