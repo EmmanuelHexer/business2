@@ -84,9 +84,6 @@ nav figure {
 
 .link-underline:hover::before {
   background-color: white;
-  width: 0%;
-}
-.link-underline:active::before {
   width: 100%;
 }
 
@@ -509,7 +506,7 @@ input {
   padding: 15px 20px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 /* SERVICES SECTION END */
@@ -517,15 +514,19 @@ input {
 /* CONTACT US SECTION START */
 
 .contact-container {
-  height: 100vh;
   background-repeat: repeat;
   background-position: bottom;
-  background-color: rgba(132, 127, 119, 0.215);
+  background: #141414;
+  color: white;
   margin-top: 2rem;
+  border-radius: 10px;
+  margin-bottom: 18rem;
+  box-shadow: 0px 10px 30px rgba(255, 136, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
 .contact-heading {
@@ -550,21 +551,22 @@ input {
   justify-content: center;
   align-items: center;
 }
-iframe {
+.map {
   /* z-index: -1; */
   position: relative;
+  border-radius: 10px;
 }
 
 #form input,
 textarea {
   width: 80%;
   padding: 15px 20px;
-  border: 1px solid #cccccc;
+  border: none;
   border-radius: 5px;
   margin-bottom: 10px;
   outline: none;
-  color: rgb(246, 244, 244);
-  background-color: rgba(168, 132, 22, 0.256);
+  color: #ffffff;
+  background: #1e1e1e;
   font-size: 14px;
   font-weight: lighter;
   letter-spacing: 1.2px;
@@ -572,49 +574,76 @@ textarea {
 textarea {
   resize: none;
 }
+
+input:focus,
+textarea:focus {
+  background: rgba(255, 126, 0, 0.2);
+  outline: none;
+}
+
+#form input:focus {
+  background: rgba(255, 126, 0, 0.2);
+}
+
 #form input::placeholder,
 textarea::placeholder {
-  color: #cccccc;
-  font-style: italic;
+  color: #ffffff;
 }
 .submit {
   padding: 10px 15px;
-  background-color: #ff8c00;
+  background: linear-gradient(45deg, #ff7e00, #ff3d00);
   border: none;
-  color: aliceblue;
+  color: #ffffff;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 0 5px 15px rgba(255, 126, 0, 0);
+  font-family: "poppins", sans-serif;
   letter-spacing: 1.5px;
   border-radius: 10px;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   margin: 10px 0 15px 0;
 }
 
 .submit:hover {
-  background-color: #e6cc3e;
+  background: linear-gradient(45deg, #ff3d00, #ff7e00);
+  transform: scale(1.05);
 }
 
 .contact-address {
   font-size: 1.2rem;
-  color: rgb(253, 249, 249);
+  color: #ffffff;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  background-color: rgba(245, 245, 245, 0.431);
+  align-items: start;
+  background: #1e1e1e;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .contact-address h3 {
   font-size: 2rem;
-  margin-bottom: 0;
-  text-decoration: underline;
-  color: #110900c4;
+  margin-bottom: 1rem;
+  color: var(--main-theme-color);
 }
+
+.fa-instagram,
+.fa-phone {
+  color: var(--main-theme-color);
+  width: 20px;
+  margin-right: 10px;
+}
+
 .contact-address p {
   margin-top: 0;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  background: #111;
+  padding: 10px;
+  border-radius: 5px;
 }
+
 /* FOOTER  */
 
 .footer-container {

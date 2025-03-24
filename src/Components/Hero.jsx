@@ -13,8 +13,8 @@ const Hero = () => {
 
   return (
     <div className="">
+      <ScrollToTop />
       <section className="hero">
-        <ScrollToTop />
         <div className="hero-first-half">
           <h1>
             <span className="slide-In-left">Get our</span>
