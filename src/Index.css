@@ -516,13 +516,12 @@ input {
 .contact-container {
   background-repeat: repeat;
   background-position: bottom;
-  background: #141414;
+  background-color: #25140a;
   color: white;
   margin-top: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   margin-bottom: 18rem;
-  box-shadow: 0px 10px 30px rgba(255, 136, 0, 0.3);
-  backdrop-filter: blur(10px);
 }
 .grid-wrapper {
   display: grid;
@@ -565,8 +564,9 @@ textarea {
   border-radius: 5px;
   margin-bottom: 10px;
   outline: none;
-  color: #ffffff;
-  background: #1e1e1e;
+  background-color: #3a220e;
+  border: 1px solid #b07d47;
+  color: #ffbb73;
   font-size: 14px;
   font-weight: lighter;
   letter-spacing: 1.2px;
@@ -575,23 +575,20 @@ textarea {
   resize: none;
 }
 
-input:focus,
-textarea:focus {
+#form input:focus,
+#form textarea:focus {
   background: rgba(255, 126, 0, 0.2);
   outline: none;
-}
-
-#form input:focus {
-  background: rgba(255, 126, 0, 0.2);
 }
 
 #form input::placeholder,
 textarea::placeholder {
   color: #ffffff;
+  font-style: italic;
 }
 .submit {
   padding: 10px 15px;
-  background: linear-gradient(45deg, #ff7e00, #ff3d00);
+  background: linear-gradient(45deg, #ff6b00, #ff3d00);
   border: none;
   color: #ffffff;
   font-weight: 600;
@@ -615,9 +612,9 @@ textarea::placeholder {
   display: flex;
   justify-content: space-around;
   align-items: start;
-  background: #1e1e1e;
+  background-color: #3a220e;
   backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   margin-top: 20px;
 }
 
@@ -640,8 +637,16 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   background: #111;
+  border: 2px solid #ff6b00;
   padding: 10px;
   border-radius: 5px;
+  transition: all 0.4s linear;
+}
+
+.contact-address p:hover {
+  border-color: #ffbb73;
+  box-shadow: 0 0 10px rgba(255, 187, 115, 0.5);
+  transform: scale(1.05);
 }
 
 /* FOOTER  */
