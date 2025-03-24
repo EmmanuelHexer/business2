@@ -5,7 +5,7 @@ const Products = ({ products }) => {
   const [visibleCount, setVisibleCount] = useState(8);
 
   const loadMore = () => {
-    setVisibleCount((prev) => prev + 8);
+    setVisibleCount((prev) => prev + 4);
   };
 
   useEffect(() => {
