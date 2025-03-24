@@ -15,6 +15,21 @@
   .load-food {
     max-width: 100%;
   }
+
+  .top-btn-position {
+    bottom: 7rem;
+    right: 2rem;
+  }
+
+  .services-content {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12rem;
+  }
+
+  .service p {
+    margin: 8px;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -40,15 +55,6 @@
 @media (max-width: 900px) {
   .foods {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .foods {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  .food-btn {
-    width: 100%;
   }
 }
 
@@ -156,16 +162,36 @@
   .foods {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .services-heading {
+    font-size: 3rem;
+  }
+
+  .service-img {
+    height: 150px;
+  }
+
+  .top-btn-style {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 @media (max-width: 600px) {
-  .foods {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .hero {
     margin-top: 50px;
     justify-content: start !important;
+  }
+
+  .foods {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .food-btn {
+    width: 100%;
+  }
+
+  .services-content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -201,6 +227,13 @@
   }
   .great-prices {
     display: none;
+  }
+  .services-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top-btn-style {
+    height: 3rem;
+    width: 3rem;
   }
 }
 
