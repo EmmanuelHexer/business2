@@ -3,6 +3,7 @@ import SocialLinks from "../Utility/SocialLinks";
 import { useState } from "react";
 import { Close, Open } from "./MobileMenuToggle";
 import MobileMenu from "./MobileMenu";
+import ScrollToTop from "./ScrollToTop";
 
 const Hero = () => {
   const [isOpen, setIsOPen] = useState(false);
@@ -13,6 +14,7 @@ const Hero = () => {
   return (
     <div className="">
       <section className="hero">
+        <ScrollToTop />
         <div className="hero-first-half">
           <h1>
             <span className="slide-In-left">Get our</span>
