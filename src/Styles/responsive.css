@@ -255,6 +255,10 @@
     height: 3rem;
     width: 3rem;
   }
+
+  .top-btn-position {
+    bottom: 8.5rem;
+  }
 }
 
 @media (max-width: 320px) {
