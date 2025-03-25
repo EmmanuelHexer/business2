@@ -84,7 +84,7 @@
   }
 
   .hero {
-    justify-content: start !important;
+    justify-content: center !important;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
@@ -199,8 +199,7 @@
 
 @media (max-width: 600px) {
   .hero {
-    margin-top: 50px;
-    justify-content: start !important;
+    justify-content: center !important;
   }
 
   .foods {
@@ -228,10 +227,17 @@
   .hero {
     justify-content: center !important;
     margin: 0;
+    flex-direction: column-reverse;
+    gap: 0;
   }
 
   .hero-first-half h1 {
     font-size: 38px;
+    text-align: center;
+  }
+
+  .hero-first-half button {
+    width: 100%;
   }
 
   .ham-none {
@@ -243,7 +249,7 @@
   }
 
   .hero-second-half .plate {
-    display: none;
+    max-width: 500px;
   }
   .great-prices {
     display: none;
@@ -276,13 +282,6 @@
   .hero-first-half button {
     padding: 5px 8px;
     font-size: 12px;
-  }
-
-  .hero-second-half .plate {
-    display: none;
-  }
-
-  .great-prices {
-    display: none;
+    margin-top: 10px;
   }
 }
