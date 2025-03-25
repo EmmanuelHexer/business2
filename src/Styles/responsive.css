@@ -57,6 +57,10 @@
     max-width: 400px;
   }
 
+  .products h1 {
+    font-size: 3rem;
+  }
+
   .great-prices {
     font-size: 14px;
     padding: 18px;
