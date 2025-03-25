@@ -15,7 +15,7 @@ const Products = ({ products }) => {
     async function getData() {
       try {
         const response = await fetch(
-          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/3e801a6285b80289958c5aa98722256b504a250c/product.json",
+          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/3e801a6285b80289958c5aa98722256b504a250c/products.json",
         );
         const data = await response.json();
         setData(data);
