@@ -1,28 +1,14 @@
-import Nav from "./Components/Nav";
-import Hero from "./Components/Hero";
-import Products from "./Components/Products";
-import Services from "./Components/services";
-import Contact from "./Components/Contact";
-import Footer from "./Components/footer";
-import { useRef } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import ProductsPage from "./Pages/ProductsPage";
+
 const App = () => {
-  const home = useRef(null);
-  const products = useRef(null);
-  const services = useRef(null);
-  const contact = useRef(null);
   return (
     <div>
-      <Nav
-        home={home}
-        products={products}
-        services={services}
-        contact={contact}
-      />
-      <Hero />
-      <Products products={products} />
-      <Services services={services} />
-      <Contact contact={contact} />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:name" element={<ProductsPage />} />
+      </Routes>
     </div>
   );
 };
