@@ -5,7 +5,7 @@ const Products = ({ products }) => {
   const [visibleCount, setVisibleCount] = useState(8);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [fetchProducts, setFetchProducts] = useState(() => async () => {});
+
   const reload = () => {
     window.location.reload();
   };
@@ -26,9 +26,10 @@ const Products = ({ products }) => {
         setLoading(false);
       }
     }
-    setFetchProducts(() => getData);
+
     getData();
   }, []);
+
   return (
     <div className="products no-padding-wrapper" ref={products}>
       {" "}
@@ -50,7 +51,6 @@ const Products = ({ products }) => {
               key={index}
               imageUrl={product.imageUrl}
               foodName={product.name}
-              description={product.description}
               category={product.category}
             />
           ))}{" "}

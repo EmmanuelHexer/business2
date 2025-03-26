@@ -20,9 +20,9 @@ const Hero = () => {
             <span className="slide-In-left">Get our</span>
             <span className="slide-In-left">best food!</span>
           </h1>
-          <p>let's start do your order now!</p>
+          <p>Call us for your dishes now!</p>
           <div className="checkout-affordable">
-            <button className="hover-white">Check out</button>
+            <button className="hover-white">Explore</button>
           </div>
         </div>
         <div className="hero-second-half">
