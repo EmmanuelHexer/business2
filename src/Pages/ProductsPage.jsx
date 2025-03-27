@@ -29,6 +29,7 @@ const ProductsPage = () => {
 
   return (
     <div className="product-page">
+      <Nav />
       <section className="product-details">
         <img src={imageUrl} alt="" />
         <div className="details-text">
