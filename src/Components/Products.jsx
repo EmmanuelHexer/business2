@@ -16,12 +16,13 @@ const Products = ({ products }) => {
     async function getData() {
       try {
         const response = await fetch(
-          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/3e801a6285b80289958c5aa98722256b504a250c/products.json",
+          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/4c3bc9e17a93e103be3347904de6fa6dc0cea422/products.json",
         );
         const data = await response.json();
-        setData(data);
+        if (data && data.length) setData(data);
       } catch (err) {
         setError(err.message);
+        console.log("Error fetching data", data);
       } finally {
         setLoading(false);
       }
