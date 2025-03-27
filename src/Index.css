@@ -474,6 +474,7 @@ input {
 .product-page {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-details {
@@ -481,7 +482,7 @@ input {
   justify-content: center;
   gap: 5rem;
   align-items: center;
-  height: calc(100vh - 107px);
+  height: calc(100vh - 127px);
 }
 
 .product-details img {
@@ -494,7 +495,7 @@ input {
 }
 
 .details-foodName {
-  font-size: 3rem;
+  font-size: 6rem;
   color: #ffffff;
 }
 

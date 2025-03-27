@@ -225,6 +225,10 @@
     width: 4rem;
   }
 
+  .product-details {
+    gap: 0;
+  }
+
   .product-details img {
     height: 30rem;
   }
