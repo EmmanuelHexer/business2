@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Nav from "../Components/Nav";
 import { useParams } from "react-router-dom";
+import MobileMenu from "../Components/MobileMenu";
+import HamburgerMenu from "../Components/HamburgerMenu";
 
 const ProductsPage = () => {
   const { name } = useParams();
@@ -25,16 +27,17 @@ const ProductsPage = () => {
   const { name: foodName, imageUrl, description, category } = product;
 
   return (
-    <div>
+    <div className="product-page">
       <Nav />
       <section className="product-details">
         <img src={imageUrl} alt="" />
-        <div>
+        <div className="details-text">
           <h1 className="details-foodName">{foodName}</h1>
           <div className="details-category">{category}</div>
           <div className="details-description">{description}</div>
         </div>
       </section>
+      <HamburgerMenu />
     </div>
   );
 };

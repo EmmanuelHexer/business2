@@ -309,13 +309,6 @@ input {
   display: none;
 }
 
-.none {
-  display: none;
-}
-
-.block {
-  display: block;
-}
 .slide-In-left {
   animation: slideInLeft 2s ease-out forwards;
 }
@@ -478,11 +471,17 @@ input {
 
 /* FOOD PRODUCT DETAILS */
 
+.product-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .product-details {
   display: flex;
-  margin-top: 15rem;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  height: calc(100vh - 107px);
 }
 
 .product-details img {

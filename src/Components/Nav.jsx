@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-const Nav = ({ home, products, services, contact, hide }) => {
+const Nav = ({ home, products, services, contact }) => {
   const [underline, setUnderline] = useState("link-underline");
   const [selectedLink, setSelectedLink] = useState(null);
 
@@ -37,7 +37,7 @@ const Nav = ({ home, products, services, contact, hide }) => {
             <img className="logo" src={logo} alt="logo" />
           </a>
         </figure>
-        <ul className={hide ? "none" : "block"}>
+        <ul>
           {links.map(({ name, url }, index) => {
             return (
               <li key={index} className="none">

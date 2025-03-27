@@ -1,14 +1,9 @@
 import plate from "../assets/plate.png";
 import SocialLinks from "../Utility/SocialLinks";
-import { useState } from "react";
-import { Close, Open } from "./MobileMenuToggle";
-import MobileMenu from "./MobileMenu";
 import ScrollToTop from "./ScrollToTop";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Hero = () => {
-  const [isOpen, setIsOPen] = useState(false);
-  const openMobileMenu = () => setIsOPen(!isOpen);
-
   const socials = SocialLinks();
 
   return (
@@ -20,7 +15,7 @@ const Hero = () => {
             <span className="slide-In-left">Get our</span>
             <span className="slide-In-left">best food!</span>
           </h1>
-          <p>Call us for your dishes now!</p>
+          <p>Call us for your food now!</p>
           <div className="checkout-affordable">
             <button className="hover-white">Explore</button>
           </div>
@@ -43,10 +38,7 @@ const Hero = () => {
           </li>
         ))}
       </ul>
-      <button onClick={openMobileMenu} className="ham-menu">
-        {isOpen ? <Close /> : <Open />}
-        {isOpen && <MobileMenu isOPen={isOpen} setIsOpen={setIsOPen} />}
-      </button>
+      <HamburgerMenu />
     </div>
   );
 };
