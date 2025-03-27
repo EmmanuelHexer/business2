@@ -3,6 +3,7 @@ import Nav from "../Components/Nav";
 import { useParams } from "react-router-dom";
 import MobileMenu from "../Components/MobileMenu";
 import HamburgerMenu from "../Components/HamburgerMenu";
+import { FaPhone } from "react-icons/fa";
 
 const ProductsPage = () => {
   const { name } = useParams();
@@ -35,6 +36,23 @@ const ProductsPage = () => {
           <h1 className="details-foodName">{foodName}</h1>
           <div className="details-category">{category}</div>
           <div className="details-description">{description}</div>
+          <div className="details-contact">
+            <p>
+              <FaPhone className="fa-phone" />
+              Phone: <span>+1 347 293 3674</span>{" "}
+            </p>
+            <p>
+              <FaPhone className="fa-phone" />
+              FAX: <span>+1 347 431 8860</span>
+            </p>
+            <a
+              href="https://wa.me/1234567890"
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
         </div>
       </section>
       <HamburgerMenu />

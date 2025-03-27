@@ -46,6 +46,41 @@
     gap: 10px;
     padding: 10px;
   }
+
+  .product-details {
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 0;
+  }
+
+  .product-details img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    display: block;
+    gap: 0;
+    margin-bottom: 1rem;
+  }
+
+  .details-contact {
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .details-text {
+    width: 80%;
+    text-align: center;
+  }
+
+  .product-details h1 {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -73,26 +108,6 @@
 
   .foods {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* .map {
-    display: none;
-  } */
-
-  .product-details {
-    gap: 5rem;
-    flex-wrap: wrap;
-  }
-
-  .product-details img {
-    max-width: 400px;
-    height: 400px;
-    display: block;
-    gap: 0;
-  }
-
-  .product-details h1 {
-    margin-top: 0;
   }
 }
 
@@ -225,12 +240,36 @@
     width: 4rem;
   }
 
+  .details-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .details-foodName {
+    font-size: 2.5rem !important;
+    margin-top: 1rem !important;
+  }
+
+  .details-description {
+    font-size: 1.4rem;
+  }
+
   .product-details {
     gap: 0;
   }
 
+  .details-contact p {
+    margin: 0;
+    padding: 0.75rem 1.35rem;
+  }
+
   .product-details img {
-    height: 30rem;
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    display: block;
+    gap: 0;
+    margin-bottom: 1rem;
   }
 }
 
