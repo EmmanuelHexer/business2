@@ -265,7 +265,7 @@
   .product-details img {
     width: 100%;
     max-width: 500px;
-    height: 150px;
+    height: 250px;
     display: block;
     gap: 0;
     margin-bottom: 1rem;
@@ -340,6 +340,16 @@
 
   .top-btn-position {
     bottom: 8.5rem;
+  }
+
+  .product-details img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 457px) {
+  .whatsapp-btn {
+    margin-bottom: 6rem;
   }
 }
 
