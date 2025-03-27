@@ -483,6 +483,7 @@ input {
   gap: 8rem;
   align-items: center;
   flex-grow: 1;
+  border-radius: 2rem;
 }
 
 .product-details img {
@@ -528,28 +529,12 @@ input {
   color: white;
 }
 
-.whatsapp-btn {
-  align-self: flex-start;
-  width: fit-content;
-  padding: 12px 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
-  transition: background 0.3s ease-in-out;
-}
-
-.whatsapp-btn:hover {
-  background-color: #1da851;
-}
-
 .details-contact {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
   margin-top: 2rem;
+  align-items: center;
 }
 
 .details-contact .fa-phone {
@@ -573,6 +558,25 @@ input {
   border-color: #ffbb73;
   box-shadow: 0 0 10px rgba(255, 187, 115, 0.5);
   transform: scale(1.05);
+}
+.whatsapp-btn {
+  align-self: center;
+  width: fit-content;
+  padding: 15px 27px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
+  transform: scale(1.05);
+  background-color: #1ebe5d;
+  color: white;
 }
 
 /* SERVICES SECTION START */

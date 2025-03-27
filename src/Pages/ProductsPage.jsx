@@ -39,10 +39,6 @@ const ProductsPage = () => {
           <div className="details-contact">
             <p>
               <FaPhone className="fa-phone" />
-              Phone: <span>+1 347 293 3674</span>{" "}
-            </p>
-            <p>
-              <FaPhone className="fa-phone" />
               FAX: <span>+1 347 431 8860</span>
             </p>
             <a
