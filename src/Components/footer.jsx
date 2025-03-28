@@ -17,10 +17,10 @@ const Footer = ({ footer }) => {
           </div>
 
           <div className="socials">
-            <a href="www.instagram.com">
+            <a href="https://www.instagram.com/millys_cuisine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
               <FaInstagram color="orange" size={28} className="socials-link" />
             </a>
-            <a href="www.threads.com">
+            <a href="https://www.threads.net/@millys_cuisine">
               <FaSquareThreads
                 color="white"
                 size={28}

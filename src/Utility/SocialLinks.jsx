@@ -1,20 +1,20 @@
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaThreads } from "react-icons/fa6";
 
 const SocialLinks = () => {
   const links = [
     {
       img: <TiSocialFacebook />,
-      url: "https://www.facebook.com",
+      url: "https://web.facebook.com/?_rdc=1&_rdr#",
     },
     {
       img: <TiSocialInstagram />,
-      url: "https://www.x.com",
+      url: "https://www.instagram.com/millys_cuisine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
     {
-      img: <FaXTwitter />,
-      url: "https://www.instagram.com",
+      img: <FaThreads />,
+      url: "https://www.threads.net/@millys_cuisine",
     },
   ];
   return links;

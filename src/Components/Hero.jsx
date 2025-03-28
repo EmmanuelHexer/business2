@@ -19,8 +19,8 @@ const Hero = () => {
       <section className="hero">
         <div className="hero-first-half">
           <h1>
-            <span className="slide-In-left">Get our</span>
-            <span className="slide-In-left">best food!</span>
+            <span className="slide-In-left">Get yourself</span>
+            <span className="slide-In-left">a bit of Us!</span>
           </h1>
           <p>Call us for your food now!</p>
           <div className="checkout-affordable">

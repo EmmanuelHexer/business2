@@ -841,6 +841,7 @@ textarea::placeholder {
   color: var(--main-theme-color);
   width: 20px;
   margin-right: 10px;
+  transform: rotate(90deg);
 }
 
 .contact-address p {

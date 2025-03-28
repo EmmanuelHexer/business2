@@ -26,7 +26,7 @@ const ProductsPage = () => {
     try {
       async function getData() {
         const response = await fetch(
-          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/4c3bc9e17a93e103be3347904de6fa6dc0cea422/products.json",
+          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/4c3bc9e17a93e103be3347904de6fa6dc0cea422/products.json"
         );
         const data = await response.json();
         const foundProduct = data.find((item) => item.name === name);
@@ -69,10 +69,10 @@ const ProductsPage = () => {
           <div className="details-contact">
             <p>
               <FaPhone className="fa-phone" />
-              FAX: <span>+1 347 431 8860</span>
+              <b>Fax: </b> <span>+1 347 431 8860</span>
             </p>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/+13472933674"
               target="_blank"
               class="whatsapp-btn"
             >
