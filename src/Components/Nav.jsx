@@ -63,7 +63,7 @@ const Nav = ({ home, products, services, contact }) => {
             );
           })}
         </ul>
-        <div className="search-box">
+        {/* <div className="search-box">
           <button className="btn-search">
             <FaSearch className="search fas fa-search" />
           </button>
@@ -72,7 +72,7 @@ const Nav = ({ home, products, services, contact }) => {
             type="text"
             placeholder="Search for foods"
           />
-        </div>
+        </div> */}
       </nav>
     </div>
   );
