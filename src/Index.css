@@ -301,6 +301,10 @@ input {
   font-weight: bold;
 }
 
+.social-links li {
+  transition: background 0.4s ease-in-out;
+}
+
 .social-links li:hover {
   background-color: var(--main-theme-color);
 }
