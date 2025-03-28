@@ -141,6 +141,7 @@
   .hero-first-half p {
     margin-top: 40px;
     font-size: 13px;
+    text-align: center;
   }
 
   .hero-first-half button {
