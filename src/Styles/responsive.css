@@ -357,7 +357,8 @@
 
   .back-to-products-link {
     font-size: 1.1rem !important;
-    width: 80%;
+    width: 90%;
+    padding: 0.75rem 0.7rem;
   }
 }
 
