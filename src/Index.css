@@ -379,12 +379,46 @@ input {
   align-items: center;
 }
 
+.header-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.header-filter select {
+  appearance: none;
+  background: white;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="%23ff8800"><path d="M7 10l5 5 5-5z"></path></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 4rem;
+  padding-right: 30px;
+  justify-self: flex-end;
+}
+
+.header-filter select:hover,
+.header-filter select:focus {
+  border-color: #ff5500;
+  box-shadow: 0 0 10px rgba(255, 136, 0, 0.5);
+}
+
 .products h1 {
   text-align: center;
   color: #ffffff;
   font-size: 4rem;
   text-transform: uppercase;
-  margin-bottom: 6rem;
+  text-align: center;
+  flex-grow: 1;
 }
 
 .foods {

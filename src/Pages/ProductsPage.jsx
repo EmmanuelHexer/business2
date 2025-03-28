@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
-import Nav from "../Components/Nav";
 import { useParams } from "react-router-dom";
-import MobileMenu from "../Components/MobileMenu";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-
-import HamburgerMenu from "../Components/HamburgerMenu";
 import { FaPhone } from "react-icons/fa";
+import Footer from "../Components/footer";
 
 const ProductsPage = () => {
   const { name } = useParams();
