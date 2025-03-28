@@ -9,9 +9,11 @@ const Products = ({ products }) => {
   const reload = () => {
     window.location.reload();
   };
+
   const loadMore = () => {
     setVisibleCount((prev) => prev + 4);
   };
+
   useEffect(() => {
     async function getData() {
       try {
@@ -32,7 +34,7 @@ const Products = ({ products }) => {
   }, []);
 
   return (
-    <div className="products no-padding-wrapper" ref={products}>
+    <div className="products no-padding-wrapper" ref={products} id="products">
       {" "}
       <h1>Food products</h1>{" "}
       {loading ? (

@@ -104,6 +104,11 @@
   .foods {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .back-to-products-link {
+    font-size: 1.3rem !important;
+    padding: 0.75rem 1.45rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -235,6 +240,10 @@
     width: 4rem;
   }
 
+  .back-arrow {
+    font-size: 2rem;
+  }
+
   .details-text {
     width: 100%;
     text-align: center;
@@ -344,6 +353,11 @@
 
   .product-details img {
     height: 150px;
+  }
+
+  .back-to-products-link {
+    font-size: 1.1rem !important;
+    width: 80%;
   }
 }
 

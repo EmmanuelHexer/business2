@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Nav from "../Components/Nav";
 import Hero from "../Components/Hero";
+import HamburgerMenu from "../Components/HamburgerMenu";
 import Products from "../Components/Products";
 import Services from "../Components/services";
 import Contact from "../Components/Contact";
@@ -20,6 +21,12 @@ const Home = () => {
         contact={contact}
       />
       <Hero />
+      <HamburgerMenu
+        home={home}
+        products={products}
+        services={services}
+        contact={contact}
+      />
       <Products products={products} />
       <Services services={services} />
       <Contact contact={contact} />

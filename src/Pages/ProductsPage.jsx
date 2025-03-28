@@ -2,12 +2,29 @@ import { useEffect, useState } from "react";
 import Nav from "../Components/Nav";
 import { useParams } from "react-router-dom";
 import MobileMenu from "../Components/MobileMenu";
+import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
 import HamburgerMenu from "../Components/HamburgerMenu";
 import { FaPhone } from "react-icons/fa";
 
 const ProductsPage = () => {
   const { name } = useParams();
   const [product, setProduct] = useState({});
+
+  const navigate = useNavigate();
+
+  const navigateToContact = () => {
+    navigate("/");
+    setTimeout(() => {
+      const contactSection = document.getElementById("products");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   useEffect(() => {
     try {
@@ -29,7 +46,24 @@ const ProductsPage = () => {
 
   return (
     <div className="product-page">
-      <Nav />
+      <nav className="nav product-details-nav">
+        <figure>
+          <a href="/">
+            <img className="logo" src={logo} alt="logo" />
+          </a>
+        </figure>
+        <ul>
+          <li>
+            <Link
+              to={"/"}
+              onClick={navigateToContact}
+              className="back-to-products-link"
+            >
+              <span className="back-arrow">←</span>Back To Products
+            </Link>
+          </li>
+        </ul>
+      </nav>
       <section className="product-details">
         <img src={imageUrl} alt="" />
         <div className="details-text">
@@ -51,7 +85,6 @@ const ProductsPage = () => {
           </div>
         </div>
       </section>
-      <HamburgerMenu />
     </div>
   );
 };

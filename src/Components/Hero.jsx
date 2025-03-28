@@ -6,6 +6,13 @@ import HamburgerMenu from "./HamburgerMenu";
 const Hero = () => {
   const socials = SocialLinks();
 
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById("products");
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="">
       <ScrollToTop />
@@ -17,7 +24,9 @@ const Hero = () => {
           </h1>
           <p>Call us for your food now!</p>
           <div className="checkout-affordable">
-            <button className="hover-white">Explore</button>
+            <button onClick={scrollToProducts} className="hover-white">
+              Explore
+            </button>
           </div>
         </div>
         <div className="hero-second-half">
