@@ -360,6 +360,10 @@
     width: 90%;
     padding: 0.75rem 0.7rem;
   }
+
+  .footer-container .copyright p {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 457px) {
