@@ -3,7 +3,7 @@ import Nav from "../Components/Nav";
 import Hero from "../Components/Hero";
 import HamburgerMenu from "../Components/HamburgerMenu";
 import Products from "../Components/Products";
-import Services from "../Components/services";
+import Services from "../Components/Services";
 import Contact from "../Components/Contact";
 import Footer from "../Components/footer";
 

@@ -4,7 +4,6 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
-import Footer from "../Components/footer";
 
 const ProductsPage = () => {
   const { name } = useParams();
@@ -26,7 +25,7 @@ const ProductsPage = () => {
     try {
       async function getData() {
         const response = await fetch(
-          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/4c3bc9e17a93e103be3347904de6fa6dc0cea422/products.json"
+          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/4c3bc9e17a93e103be3347904de6fa6dc0cea422/products.json",
         );
         const data = await response.json();
         const foundProduct = data.find((item) => item.name === name);
