@@ -1,0 +1,10 @@
+{
+  "rewrites": [{ "source": "/product/:name", "destination": "/index.html" }],
+  "redirects": [
+    {
+      "source": "/product/:name",
+      "destination": "/product/:name",
+      "statusCode": 200
+    }
+  ]
+}
