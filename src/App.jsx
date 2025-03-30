@@ -8,11 +8,11 @@ const App = () => {
   return (
     <div>
       <ScrollDefault />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product/:name" element={<ProductsPage />} />
       </Routes>
+      <SpeedInsights />
     </div>
   );
 };

@@ -1,22 +1,20 @@
 import { useEffect } from "react";
-import { useLocation, useNavigationType } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-export default function useScrollMemory() {
+const ScrollRestoration = () => {
   const location = useLocation();
-  const navigationType = useNavigationType();
 
   useEffect(() => {
-    if (navigationType === "POP" && sessionStorage.getItem("fromProduct")) {
-      document
-        .getElementById("products")
-        ?.scrollIntoView({ behavior: "smooth" });
-      sessionStorage.removeItem("fromProduct");
-    }
+    window.history.scrollRestoration = "manual";
 
-    if (location.pathname.startsWith("/product/")) {
-      sessionStorage.setItem("fromProduct", "true");
+    if (location.state?.fromProduct) {
+      window.scrollTo({ top: 800, left: 0, behavior: "instant" });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
-  }, [location.pathname, navigationType]);
+  }, [location.state]);
 
   return null;
-}
+};
+
+export default ScrollRestoration;
