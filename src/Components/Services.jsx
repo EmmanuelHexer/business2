@@ -4,7 +4,6 @@ import {
   TbHexagonNumber2,
   TbHexagonNumber3,
 } from "react-icons/tb";
-import { GrAnnounce } from "react-icons/gr";
 
 const Services = ({ services }) => {
   return (

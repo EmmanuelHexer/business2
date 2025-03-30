@@ -7,7 +7,7 @@ const Product = ({ imageUrl, category, foodName, description }) => {
       <div className="food-category">{category}</div>
       <div className="food-name">{foodName}</div>
       <div className="food-description">{description}</div>
-      <Link to={`/product/${foodName}`}>
+      <Link to={`/product/${foodName}`} state={{ fromProduct: true }}>
         <button className="food-btn">View Details</button>
       </Link>
     </div>

@@ -11,7 +11,7 @@ const ProductsPage = () => {
 
   const navigate = useNavigate();
 
-  const navigateToContact = () => {
+  const navigateToProducts = () => {
     navigate("/");
     setTimeout(() => {
       const contactSection = document.getElementById("products");
@@ -51,7 +51,7 @@ const ProductsPage = () => {
           <li>
             <Link
               to={"/"}
-              onClick={navigateToContact}
+              onClick={navigateToProducts}
               className="back-to-products-link"
             >
               <span className="back-arrow">←</span>Back To Products
