@@ -17,7 +17,7 @@ const Services = ({ services }) => {
               <img
                 title="Welcome to Milly's Cuisine - Where Flavor Meets Elegance!."
                 className="service-img"
-                src="https://african.land/oc-content/plugins/blog/img/blog/1332.jpg"
+                src="/src/assets/catering.jpg"
               />
               <h3>
                 <TbHexagonNumber1 color="pink" size={58} />
@@ -36,7 +36,7 @@ const Services = ({ services }) => {
               <img
                 className="service-img"
                 title="Made Just for You!."
-                src="https://chefamenta.com/wp-content/uploads/2024/10/food-orders-295x300.jpg"
+                src="/src/assets/personal.jpg"
               />
               <h3>
                 <TbHexagonNumber2 color="blue" size={58} />
@@ -53,7 +53,7 @@ const Services = ({ services }) => {
               <img
                 className="service-img"
                 title="Perfectly Planned, Flawlessly Executed!."
-                src="https://aldhafrauae.ae/wp-content/uploads/2021/11/event-and-catering-agency-organization-modern-wedd-L56YUGX-min_480x480.webp"
+                src="/src/assets/event.webp"
               />
               <h3>
                 <TbHexagonNumber3 color="purple" size={58} />
