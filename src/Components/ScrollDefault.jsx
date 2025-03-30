@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const ScrollRestoration = () => {
+const ScrollDefault = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -17,4 +17,4 @@ const ScrollRestoration = () => {
   return null;
 };
 
-export default ScrollRestoration;
+export default ScrollDefault;
