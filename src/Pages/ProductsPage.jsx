@@ -25,7 +25,7 @@ const ProductsPage = () => {
     try {
       async function getData() {
         const response = await fetch(
-          "https://gist.githubusercontent.com/KwabenaIzen/80ce0e87052e50c902f6d8e6224de8dc/raw/4c3bc9e17a93e103be3347904de6fa6dc0cea422/products.json",
+          "https://cdn.jsdelivr.net/gh/KwabenaIzen/products-json@main/products%20json/products.json",
         );
         const data = await response.json();
         const foundProduct = data.find((item) => item.name === name);
@@ -73,7 +73,7 @@ const ProductsPage = () => {
             <a
               href="https://wa.me/+13472933674"
               target="_blank"
-              class="whatsapp-btn"
+              className="whatsapp-btn"
             >
               Chat on WhatsApp
             </a>
