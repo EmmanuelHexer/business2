@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
-
-Sitemap: https://millyscuisine.com/sitemap.xml
+Allow: /
+Sitemap: https://yourwebsite.com/sitemap.xml
