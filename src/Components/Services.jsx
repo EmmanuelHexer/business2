@@ -17,7 +17,8 @@ const Services = ({ services }) => {
               <img
                 title="Welcome to Milly's Cuisine - Where Flavor Meets Elegance!."
                 className="service-img"
-                src="./src/assets/catering.jpg"
+                src="/images/catering.jpg"
+                alt="catering"
               />
               <h3>
                 <TbHexagonNumber1 color="pink" size={58} />
@@ -36,7 +37,8 @@ const Services = ({ services }) => {
               <img
                 className="service-img"
                 title="Made Just for You!."
-                src="/src/assets/personal.jpg"
+                src="/images/personal.jpg"
+                alt="personal orders"
               />
               <h3>
                 <TbHexagonNumber2 color="blue" size={58} />
@@ -53,7 +55,8 @@ const Services = ({ services }) => {
               <img
                 className="service-img"
                 title="Perfectly Planned, Flawlessly Executed!."
-                src="/src/assets/event.webp"
+                src="/images/event.webp"
+                alt="event"
               />
               <h3>
                 <TbHexagonNumber3 color="purple" size={58} />
