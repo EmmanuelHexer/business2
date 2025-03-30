@@ -17,7 +17,7 @@ const Services = ({ services }) => {
               <img
                 title="Welcome to Milly's Cuisine - Where Flavor Meets Elegance!."
                 className="service-img"
-                src="/src/assets/catering.jpg"
+                src="./src/assets/catering.jpg"
               />
               <h3>
                 <TbHexagonNumber1 color="pink" size={58} />
