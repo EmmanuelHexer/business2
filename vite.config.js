@@ -6,7 +6,6 @@ import path from "path";
 
 const hostname = "https://www.millyscuisine.com/";
 const publicImageFolder = path.resolve("public/images");
-const assetImageFolder = path.resolve("src/assets");
 
 // Function to get all images from a folder
 const getImages = (folderPath, prefix) => {
@@ -15,8 +14,8 @@ const getImages = (folderPath, prefix) => {
     .readdirSync(folderPath)
     .filter((file) => /\.(png|jpe?g|webp|gif|svg)$/i.test(file))
     .map((file) => ({
-      loc: `${hostname}${prefix}/${file}`, // Image URL
-      title: file, // Optional: Title for better indexing
+      loc: `${hostname}${prefix}/${file}`, // Full URL of image
+      title: file.replace(/\.[^/.]+$/, ""), // Title (filename without extension)
     }));
 };
 
@@ -32,10 +31,7 @@ export default defineConfig({
       customPages: [
         {
           url: "/",
-          images: [
-            ...getImages(publicImageFolder, "/images"), // Include public images
-            ...getImages(assetImageFolder, "/assets"), // Include asset images
-          ],
+          images: getImages(publicImageFolder, "/images"), // Add images to the homepage entry
         },
       ],
     }),
