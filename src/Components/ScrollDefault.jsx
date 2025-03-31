@@ -8,11 +8,18 @@ const ScrollDefault = () => {
     window.history.scrollRestoration = "manual";
 
     if (location.state?.fromProduct) {
-      window.scrollTo({ top: 800, left: 0, behavior: "instant" });
+      const productSection = document.getElementById(
+        location.state.fromProduct,
+      );
+      if (productSection) {
+        productSection.scrollIntoView({ behavior: "smooth" });
+        //Clear the state after scrolling, so it doesn't try to scroll again on other route changes.
+        location.state.fromProduct = null;
+      }
     } else {
       window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
-  }, [location.state]);
+  }, [location]);
 
   return null;
 };
