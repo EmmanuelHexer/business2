@@ -16,7 +16,7 @@ const Services = ({ services }) => {
               <img
                 title="Welcome to Milly's Cuisine - Where Flavor Meets Elegance!."
                 className="service-img"
-                src="/images/catering.jpg"
+                src="https://millyscuisine.com/images/catering.jpg"
                 alt="catering"
               />
               <h3>
