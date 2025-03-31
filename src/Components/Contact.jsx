@@ -21,7 +21,7 @@ const Contact = ({ contact }) => {
       <section className="contact-container" name="contact" ref={contact}>
         <div className="grid-wrapper">
           <form action="" id="form" onSubmit={handleSubmit}>
-            <h1 className="contact-heading">Contact Us</h1>
+            <h3 className="contact-heading">Contact Us</h3>
             <input type="text" placeholder="Your name*" name="Name" required />
             <input
               type="email"

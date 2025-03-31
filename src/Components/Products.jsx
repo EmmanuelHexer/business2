@@ -49,7 +49,7 @@ const Products = ({ products }) => {
     <div className="products no-padding-wrapper" ref={products} id="products">
       {" "}
       <div className="header-filter">
-        <h1>Food products</h1>
+        <h2>Food products</h2>
         <select
           id="filter"
           defaultValue={"default"}

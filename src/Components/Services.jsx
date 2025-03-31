@@ -9,7 +9,7 @@ const Services = ({ services }) => {
   return (
     <>
       <section className="services-container" name="servcie" ref={services}>
-        <h1 className="services-heading"> our Services</h1>
+        <h2 className="services-heading"> our Services</h2>
         <article className="container">
           <div className="services-content">
             <div className="service">
