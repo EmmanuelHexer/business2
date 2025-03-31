@@ -11,6 +11,22 @@ export default defineConfig({
       robotsTxtOptions: {
         policies: [{ userAgent: "*", allow: "/" }],
       },
+      transform: async (config, path) => {
+        const images = [
+          { url: "https://millyscuisine.com/assets/logo-8fDf6JXZ.png" },
+          { url: "https://millyscuisine.com/assets/plate-Bfr48SNN.png" },
+          { url: "https://millyscuisine.com/images/catering.jpg" },
+          { url: "https://millyscuisine.com/images/event.webp" },
+          { url: "https://millyscuisine.com/images/personal.jpg" },
+        ];
+        return {
+          loc: path,
+          changefreq: "daily",
+          priority: 1.0,
+          lastmod: new Date().toISOString(),
+          images,
+        };
+      },
     }),
   ],
 });
