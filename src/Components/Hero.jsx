@@ -19,7 +19,6 @@ const Hero = () => {
       <section className="hero">
         <div className="hero-first-half">
           <h1>
-            Get YourSelf A bit of us
             <span className="slide-In-left">Get yourself</span>
             <span className="slide-In-left">a bit of Us!</span>
           </h1>
