@@ -2,9 +2,10 @@ User-agent: *
 Disallow: 
 
 
+Allow: /public/images/
 Allow: /assets/
-Allow: /images/
-Allow: /fonts/
-
+Allow: /product/
+Allow: /products
+Allow: /src/assets
 
 Sitemap: https://millyscuisine.com/sitemap.xml
