@@ -4,21 +4,21 @@ import sitemap from "vite-plugin-sitemap";
 import fs from "fs";
 import path from "path";
 
-// Function to scan images in a directory
-const getImages = (folderPath, baseUrl) => {
-  const files = fs.readdirSync(folderPath);
-  return files
-    .filter((file) => /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(file))
+const hostname = "https://www.millyscuisine.com/";
+const publicImageFolder = path.resolve("public/images");
+const assetImageFolder = path.resolve("src/assets");
+
+// Function to get all images from a folder
+const getImages = (folderPath, prefix) => {
+  if (!fs.existsSync(folderPath)) return [];
+  return fs
+    .readdirSync(folderPath)
+    .filter((file) => /\.(png|jpe?g|webp|gif|svg)$/i.test(file))
     .map((file) => ({
-      url: `${baseUrl}/images/${file}`,
+      loc: `${hostname}${prefix}/${file}`, // Image URL
+      title: file, // Optional: Title for better indexing
     }));
 };
-
-// Set your website's hostname
-const hostname = "https://www.millyscuisine.com/";
-
-// Get all images from the `/public/images/` folder
-const imageUrls = getImages(path.resolve("public/images"), hostname);
 
 export default defineConfig({
   plugins: [
@@ -32,7 +32,10 @@ export default defineConfig({
       customPages: [
         {
           url: "/",
-          images: imageUrls, // Automatically include all images
+          images: [
+            ...getImages(publicImageFolder, "/images"), // Include public images
+            ...getImages(assetImageFolder, "/assets"), // Include asset images
+          ],
         },
       ],
     }),
