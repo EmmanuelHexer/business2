@@ -25,7 +25,7 @@ const ProductsPage = () => {
     try {
       async function getData() {
         const response = await fetch(
-          "https://cdn.jsdelivr.net/gh/KwabenaIzen/products-json@main/products%20json/products.json",
+          "https://cdn.statically.io/gh/KwabenaIzen/products-json/main/products%20json/products.json",
         );
         const data = await response.json();
         const foundProduct = data.find((item) => item.name === name);
