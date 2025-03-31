@@ -2,19 +2,19 @@ const NavLinks = () => {
   const links = [
     {
       name: "Home",
-      url: "#",
+      url: "#home",
     },
     {
       name: "Products",
-      url: "",
+      url: "#products",
     },
     {
       name: "Services",
-      url: "#",
+      url: "#services",
     },
     {
       name: "Contact",
-      url: "#",
+      url: "#contact",
     },
   ];
   return links;
