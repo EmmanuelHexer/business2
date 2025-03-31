@@ -3,18 +3,21 @@ import react from "@vitejs/plugin-react";
 import sitemap from "vite-plugin-sitemap";
 
 const products = [
-  { name: "Buffalo Wings", path: "/product/buffalo&20wings" },
-  { name: "Club Sandwich", path: "/product/club&20sandwich" },
-  { name: "Cornbread", path: "/product/cornbread" },
-  { name: "Fried Chicken", path: "/product/fried&20chicken" },
-  { name: "Tater Tots", path: "/product/tater&20tots" },
-  { name: "Jollof Rice", path: "/product/jollof&20rice" },
+  { name: "Buffalo Wings", path: "/product/Buffalo%20Wings" },
+  { name: "Club Sandwich", path: "/product/Club%20Sandwich" },
+  { name: "Cornbread", path: "/product/Cornbread" },
+  { name: "Fried Chicken", path: "/product/Fried%20Chicken" },
+  { name: "Tater Tots", path: "/product/Tater%20Tots" },
+  { name: "Jollof Rice", path: "/product/Jollof%20Rice" },
   {
     name: "Ampesi with Garden Egg Stew",
-    path: "/product/ampesi&20garden&20egg",
+    path: "/product/Ampesi%20With%20Garden%20Egg%20Stew",
   },
-  { name: "Banku With Okro Stew", path: "/product/banku&20okro" },
-  { name: "Ampesi with Palava Sauce", path: "/product/ampesi&20palava" },
+  { name: "Banku With Okro Stew", path: "/product/Banku%20With%20Okro%20Stew" },
+  {
+    name: "Ampesi with Palava Sauce",
+    path: "/product/Ampesi%20With%20Palava%20Sauce",
+  },
 ];
 
 const dynamicRoutes = products.map((product) => product.path);
