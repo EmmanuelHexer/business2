@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: 
+
+
+Allow: /assets/
+Allow: /images/
+Allow: /fonts/
+
+
+Sitemap: https://millyscuisine.com/sitemap.xml
