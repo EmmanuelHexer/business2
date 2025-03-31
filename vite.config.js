@@ -11,6 +11,20 @@ export default defineConfig({
       robotsTxtOptions: {
         policies: [{ userAgent: "*", allow: "/" }],
       },
+      transform: async (config, path) => {
+        const images = [
+          { url: "/images/catering.jpg" },
+          { url: "/images/event.webp" },
+          { url: "/images/personal.jpg" },
+        ];
+        return {
+          loc: path,
+          changefreq: "daily",
+          priority: 1.0,
+          lastmod: new Date().toISOString(),
+          images,
+        };
+      },
     }),
   ],
 });
