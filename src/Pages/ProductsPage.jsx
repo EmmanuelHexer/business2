@@ -35,7 +35,7 @@ const ProductsPage = () => {
     } catch (err) {
       console.err(err);
     }
-  });
+  }, []);
 
   const { name: foodName, imageUrl, description, category } = product;
 
