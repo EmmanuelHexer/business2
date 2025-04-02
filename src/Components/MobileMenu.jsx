@@ -1,14 +1,7 @@
 import NavLinks from "../Utility/NavLinks";
 import { Link } from "react-scroll";
 
-const MobileMenu = ({
-  isOpen,
-  setIsOpen,
-  home,
-  products,
-  services,
-  contact,
-}) => {
+const MobileMenu = ({ setIsOpen, home, products, services, contact }) => {
   const links = NavLinks();
 
   const sections = [home, products, services, contact];

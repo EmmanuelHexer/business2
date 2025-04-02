@@ -13,7 +13,6 @@ const ScrollDefault = () => {
       );
       if (productSection) {
         productSection.scrollIntoView({ behavior: "smooth" });
-        //Clear the state after scrolling, so it doesn't try to scroll again on other route changes.
         location.state.fromProduct = null;
       }
     } else {

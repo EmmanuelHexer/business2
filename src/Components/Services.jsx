@@ -25,7 +25,7 @@ const Services = ({ services }) => {
               </h3>
 
               <p>
-                At Milly's Cusine, we bring delicious, high-quality cuisine to
+                At Milly's Cuisine, we bring delicious, high-quality cuisine to
                 your special events. Whether it's a wedding, corporate
                 gathering, birthday, or private party, our team is dedicated to
                 creating an unforgettable dining experience tailored to your

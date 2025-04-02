@@ -1,7 +1,7 @@
 import React from "react";
 import { FaInstagram, FaSquareThreads, FaFacebook } from "react-icons/fa6";
 
-const Footer = ({ footer }) => {
+const Footer = () => {
   return (
     <>
       <section className="footer-container">

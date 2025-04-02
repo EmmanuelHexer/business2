@@ -1,4 +1,4 @@
-import { FaPhone, FaInstagram } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 
 const ContactInfo = () => {
   return (
