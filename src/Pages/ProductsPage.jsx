@@ -4,19 +4,19 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
+import NotFoundPage from "../Components/NotFoundPage";
 
 const ProductsPage = () => {
   const { name } = useParams();
   const [product, setProduct] = useState({});
-
   const navigate = useNavigate();
 
   const navigateToProducts = () => {
     navigate("/");
     setTimeout(() => {
-      const contactSection = document.getElementById("products");
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
+      const productSection = document.getElementById("products");
+      if (productSection) {
+        productSection.scrollIntoView({ behavior: "smooth" });
       }
     }, 100);
   };
@@ -36,6 +36,10 @@ const ProductsPage = () => {
       console.err(err);
     }
   }, [name]);
+
+  if (!product) {
+    return <NotFoundPage />;
+  }
 
   const { name: foodName, imageUrl, description, category } = product;
 
