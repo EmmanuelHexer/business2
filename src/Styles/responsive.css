@@ -116,6 +116,15 @@
   .foods {
     grid-template-columns: repeat(2, 1fr);
   }
+  .page-not-found h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .page-not-found a {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
