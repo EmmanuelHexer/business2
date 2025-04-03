@@ -60,7 +60,7 @@ const ProductsPage = () => {
         </ul>
       </nav>
       <section className="product-details">
-        <img src={imageUrl} alt="" />
+        <img src={imageUrl} alt={foodName} />
         <div className="details-text">
           <h1 className="details-foodName">{foodName}</h1>
           <div className="details-category">{category}</div>
